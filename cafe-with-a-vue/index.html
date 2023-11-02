@@ -118,7 +118,6 @@
 						const item = this.simpleMenu.find((item) => item.name === e.target.name)
 						if (!item.inStock) return
 						this.shoppingCart.push({ ...item })
-						console.log(this.shoppingCart[0].quantity)
 					},
 				},
 			})
