@@ -110,10 +110,6 @@
 						return `Copyright ${this.restaurantName} ${currentYear}`
 					},
 					getCartItems() {
-						// console.log(this.shoppingCart)
-						// let totalItems = 0
-						// this.shoppingCart.forEach((i) => (totalItems += Number(i.quantity)))
-						// return totalItems
 						return this.shoppingCart.reduce((acc, cV) => acc + +cV.quantity, 0)
 					},
 				},
